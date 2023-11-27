@@ -1,0 +1,3 @@
+[submodule "fltk"]
+	path = fltk
+	url = https://framagit.org/AntoineMeyer/fltk
