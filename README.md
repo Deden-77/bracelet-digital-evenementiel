@@ -1,10 +1,10 @@
-# Project SEB
+# The SEB Project
 SEB (Cute name for "Smart Event Bracelets") is a project that aims to create Smart Bracelets for the BDE Eiffel, for them to use in party.
 
 ## Features and highlights
 - Replace entrance tickets and textile bracelets
-- Stock "tickets boissions" of participants (a kind of money used during partys to buy drinks and food)
-- Stock "tickets vestiaires" of participants (the location of their things when they give their personals stuff to the staff, so that they can get back their things with a tap of a wrist)
+- Stock guests's "tickets boissions" (a kind of money used during partys to buy drinks and food)
+- Stock guests's "tickets vestiaires" (the location of their things when they give their personals stuff to the staff, so that they can get back their things with a tap of a wrist)
 - Prove majority to buy alcohool (so that minors can be accepted in parties without being able to buy alcohool)
 - Prove membership of the BDE to get reductions on some drinks, without staff having to ask
 
@@ -17,11 +17,15 @@ SEB (Cute name for "Smart Event Bracelets") is a project that aims to create Sma
 - Acessibility: Everyone should be able to use the system
 - Speed: Usage of the system should be fast and easy, not to slow down operations (for example at the bar, or at the entrance)
 
-## Authors thank
-Thank you to the BDE Eiffel for supporting this project.
+## Contributing
 
-## A project made by
+You can contibute to this project, feel free to open an issue or a pull request. Also add your name in the credits below !
+
+### A project made by
 - Deden (Project initiative, software design, software developpement)
 - Yehoudi ? (Wristband design)
 - Angelo ? (Electronic)
-- Enzo Afonso (Existing)
+- Enzo Afonso (Saying that the project will never be done is motivating)
+
+### Special Thanks to
+- BDE Eiffel for supporting this project.
