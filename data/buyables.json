@@ -1,0 +1,15 @@
+[
+    {
+        "type": "drink",
+        "price": 100,
+        "name": "Thor",
+        "alcohol_degree": 0.05,
+        "volume": 500
+    },
+    {
+        "type": "food",
+        "price": 100,
+        "name": "Hot dogs",
+        "kcal": 290
+    }
+]
