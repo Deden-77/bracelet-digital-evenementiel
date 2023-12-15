@@ -1,6 +1,12 @@
+if __name__ == "__main__":
+    print("\n#\n#  Please lauch __init__.py instead of launching this file.\n#\n")
+    exit()
+    
 from fltk.fltk import fltk
+from classes.widgets import *
+from classes.pages import *
 
-fltk.cree_fenetre(500, 500, redimension=True)
+
 # fltk.plein_ecran()
 
 # root: fltk.tk.Tk = fltk.__canevas.root # tk.Tk()
@@ -14,32 +20,45 @@ fltk.cree_fenetre(500, 500, redimension=True)
 # fltk.__canevas.root.attributes("-fullscreen", True)
 
 
-class MaterialButton():
-    pass
 
-# Design with classes in tkinter https://www.youtube.com/watch?v=eaxPK9VIkFM
 
-fltk.rectangle(0, 0, fltk.largeur_fenetre()/2, fltk.hauteur_fenetre(), remplissage="#0096FF")
-while True:
-    fltk.attend_clic_gauche()
-    fltk.redimensionne_fenetre(800, 800)
-    print("fenetetrée", fltk.largeur_fenetre(), fltk.hauteur_fenetre())
-    fltk.attend_clic_gauche()
+
+pages = {
+    "test": TestPage
+}
+
+
+
+def main():
+    fltk.cree_fenetre(500, 500, redimension=True)
+    fltk.rectangle(0, 0, fltk.largeur_fenetre()/2, fltk.hauteur_fenetre(), remplissage="#0096FF")
     fltk.plein_ecran()
-    print("plein écran", fltk.largeur_fenetre(), fltk.hauteur_fenetre())
+    items_to_draw = []
+    # page: Page = TestPage(show_topbar=True)
+    page: Page = TestPage2(show_topbar=True)
+    while True:
+        fltk.efface_tout()
+        # topbar = TopBar()
+        # topbar.draw()
+        page.draw()
+        for item_to_draw in items_to_draw:
+            item_to_draw.draw()
+        ev = fltk.attend_ev()
+        tev = fltk.type_ev(ev)
+        print(ev, tev)
+        if tev == "Quitte":
+            fltk.ferme_fenetre()
+            exit()
+        elif tev == "ClicDroit": #ClicGauche in prod, this is for macos tests
+            clickables = page.get_clickable_childs()
+            for clickable in clickables:
+                if clickable.is_clicked(x=fltk.abscisse(ev), y=fltk.ordonnee(ev)):
+                    print("Hoora ! Button clicked !")
+                    clickable.on_click()
+                else:
+                    print("Nope")
 
-while True:
-    fltk.plein_ecran()
-    print("plein écran", fltk.largeur_fenetre(), fltk.hauteur_fenetre())
-    fltk.attend_clic_gauche()
-    fltk.redimensionne_fenetre(500, 500)
-    print("fenetetrée", fltk.largeur_fenetre(), fltk.hauteur_fenetre())
-    fltk.rectangle(0, 0, fltk.largeur_fenetre(), fltk.hauteur_fenetre(), remplissage="#0096FF")
-    fltk.attend_clic_gauche()
 
-while True:
-    ev = fltk.attend_ev()
-    tev = type(ev)
-    print(ev, tev)
+        # fltk.attend_fermeture()
 
-fltk.attend_fermeture()
+main()
