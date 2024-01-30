@@ -1,5 +1,9 @@
 # The SEB Project
 SEB (Cute name for "Smart Event Bracelets") is a project that aims to create Smart Bracelets for the BDE Eiffel, for them to use in party.
+This project is open source, and so can be used by anyone. [Read the liscence for more infos.](LICENSE)
+> [!TIP]
+> Feel free to contact me on Discord if you have any questions ! @_deden
+
 
 ## Features and highlights
 - Replace entrance tickets and textile bracelets
@@ -8,11 +12,12 @@ SEB (Cute name for "Smart Event Bracelets") is a project that aims to create Sma
 - Prove majority to buy alcohool (so that minors can be accepted in parties without being able to buy alcohool)
 - Prove membership of the BDE to get reductions on some drinks, without staff having to ask
 - Give free TB to the staffs
+- Prevent bracelet stealing, as they are not activated, they have no value to enter the party. This allows persons who already have a bracelet to enter faster, even if someone have stolen a bracelet.
 
 ### Additional features
 - Alchool counter / Limiter: The band could count how much alcool have been paid by a user to aproximate their alchool level.
 - Photobooth: Members could recieve their photos via email or SMS once tapping their band to the photo device.
-- Add TB fidelity
+- Add TB fidelity ?
 
 ## Constraints
 - Security: Wristbands should be unfalsifiable, uncopyable to prevent duplicates. users shoulden't be able to remove the wristbands during the party, unless they cut it.
