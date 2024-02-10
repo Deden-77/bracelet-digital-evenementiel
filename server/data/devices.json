@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Entrée 1",
+        "mode": "entrance",
+        "token": ""
+    },
+    {
+        "name": "Entrée 2",
+        "mode": "entrance",
+        "token": ""
+    },
+    {
+        "name": "Vestiaire",
+        "mode": "cloakroom",
+        "token": ""
+    },
+    {
+        "name": "Stand TB Entrée 1",
+        "mode": "tb",
+        "token": ""
+    },
+    {
+        "name": "Stand TB Entrée 2",
+        "mode": "tb",
+        "token": ""
+    },
+    {
+        "name": "Stand TB CROUS 1",
+        "mode": "tb",
+        "token": ""
+    },
+    {
+        "name": "Stand TB CROUS 2",
+        "mode": "tb",
+        "token": ""
+    },
+]
