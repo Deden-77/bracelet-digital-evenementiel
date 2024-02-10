@@ -3,6 +3,9 @@
         "guest_id": "k3iEJdn3cqPG",
         "first_name": "Aodren",
         "last_name": "Commun",
-        "birthdate": "2005-05-08"
+        "birth": "2005-05-08",
+        "balance": 1643,
+        "staff": true,
+        "organizer": false
     }
 ]
