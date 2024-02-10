@@ -1,4 +1,12 @@
 [
-    "Aodren Commun",
-    "Mateo"
+    {
+        "firstname": "John",
+        "lastname": "Doe",
+        "phone": "1234567890"
+    },
+    {
+        "firstname": "Jane",
+        "lastname": "Doe",
+        "phone": "1234567890"
+    }
 ]
