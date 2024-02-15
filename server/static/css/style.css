@@ -1,3 +1,26 @@
+/* https://stackoverflow.com/a/2237896 */
+/* @font-face {
+    font-family: 'Graublau Web';
+    src: url('GraublauWeb.eot');
+    src: local('Graublau Web Regular'), local('Graublau Web'),
+        url("GraublauWeb.woff") format("woff"),
+        url("GraublauWeb.otf") format("opentype"),
+        url("GraublauWeb.svg#grablau") format("svg");
+  } */
+
+@font-face {
+    font-family: "Glacial Indifference";
+    src: url(/static/glacial-indifference/webfontkit-20240212-042031/glacialindifference-regular-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Glacial Indifference";
+    src: url(/static/glacial-indifference/webfontkit-20240212-042031/glacialindifference-bold-webfont.woff2) format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
 
 
 
