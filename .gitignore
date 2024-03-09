@@ -1,0 +1,5 @@
+smart-event-bracelets.code-workspace
+__pycache__
+.vscode/launch.json
+.DS_Store
+server_sql_db/
